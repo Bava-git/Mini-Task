@@ -1,13 +1,16 @@
+// take control of the outputContainer
 let outputContainer = document.getElementById("outputContainer");
 
+// Question-01 output
 document.getElementById("Question01").addEventListener("click", function () {
     outputContainer.innerHTML = "";
+    // below code will be displayed in the outputContainer
     outputContainer.innerHTML = `
         <div>
         <h2>Question-01, Fix the bugs in below snippet</h2>
             <div class="incorrectCode">
             <pre>
-                <code>
+            <code>
                 &lt;html lang=&quot;en&quot;&gt;
                     &lt;head&gt;
                         &lt;title&gt;Document
@@ -22,40 +25,31 @@ document.getElementById("Question01").addEventListener("click", function () {
                                 Guvi Geek Network
                             &lt;/div&gt;
                         &lt;/body&gt;
-                    &lt;/html&gt;
-                </code>
+                &lt;/html&gt;
+            </code>
             </pre>
             </div>
             
             <h2>Corrected code</h2>
             <div class="coorectedCode">
-            <pre>
-            <code>
-                &lt;html lang="en"&gt;
-                &lt;head&gt;
-                    &lt;title&gt;Quastion 1&lt;/title&gt;
-                &lt;/head&gt;
-                &lt;body&gt;
-                    &lt;div&gt;
-                        &lt;p&gt;guvi&lt;/p&gt;
-                        &lt;div&gt;
-                            &lt;p&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit.&lt;/p&gt;
-                            &lt;div&gt;
-                                &lt;p&gt;Guvi Geek Network&lt;/p&gt;
-                            &lt;/div&gt;
-                        &lt;/div&gt;
-                    &lt;/div&gt;
-                &lt;/html&gt;
-            </code>
-            </pre>
+                <div>
+                    <p>guvi</p>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <div>
+                            <p>Guvi Geek Network</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-
         </div>
     `;
 });
 
+// Question-02 output
 document.getElementById("Question02").addEventListener("click", function () {
     outputContainer.innerHTML = "";
+    // below code will be displayed in the outputContainer
     outputContainer.innerHTML = `
         <div>
 
@@ -83,38 +77,29 @@ document.getElementById("Question02").addEventListener("click", function () {
             
             <h2>Corrected code</h2>
             <div class="coorectedCode">
-            <pre>
-            <code>
-                &lt;html lang=&quot;en&quot;&gt;
-                &lt;head&gt;
-                    &lt;title&gt;Quastion 2&lt;/title&gt;
-                &lt;/head&gt;
-                &lt;body&gt;
-                    &lt;div&gt;
-                        &lt;p&gt;guvi&lt;/p&gt;
-                        &lt;div&gt;
-                            &lt;p&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit.&lt;/p&gt;
-                            &lt;div&gt;
-                                &lt;p&gt;Guvi Geek Network&lt;/p&gt;
-                            &lt;/div&gt;
-                        &lt;/div&gt;
-                    &lt;/div&gt;
-                &lt;/body&gt;
-                &lt;/html&gt;
-            </code>
-            </pre>
+                <div>
+                    <p>guvi</p>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <div>
+                            <p>Guvi Geek Network</p>
+                        </div>
+                    </div>
+                </div>
             </div>
 
         </div>
     `;
 });
 
+// Question-03 output
 document.getElementById("Question03").addEventListener("click", function () {
     outputContainer.innerHTML = "";
     Quastion03Insertor();
 });
 
 function Quastion03Insertor() {
+    // below code will be displayed in the outputContainer
     outputContainer.innerHTML = `
         <div>
             <h2>Question-03, Design a contact us form with all fields as required.</h2>
@@ -143,13 +128,17 @@ function Quastion03Insertor() {
             `;
 }
 
+// After sumbit button is clicked in the contact us form
 function ContactsubmitButton() {
     Quastion03Insertor();
+    // alert message
     alert("Thank you for contacting us. We will get back to you soon.");
 }
 
+// Question-04 output
 document.getElementById("Question04").addEventListener("click", function () {
-
+    outputContainer.innerHTML = "";
+    // below code will be displayed in the outputContainer
     outputContainer.innerHTML = `
     <div>
         <h2>Question-04, Use certain HTML elements to display the following in a HTML page.</h2>
@@ -185,9 +174,10 @@ document.getElementById("Question04").addEventListener("click", function () {
     `;
 });
 
-
+// Question-05 output
 document.getElementById("Question05").addEventListener("click", function () {
-
+    outputContainer.innerHTML = "";
+    // below code will be displayed in the outputContainer
     outputContainer.innerHTML = `
     <div>
         <h2>Question-05, Create an element that helps you to open the https://google.com in separate new tab.</h2>
@@ -196,11 +186,13 @@ document.getElementById("Question05").addEventListener("click", function () {
     `;
 });
 
+// Question-06 output
 document.getElementById("Question06").addEventListener("click", function () {
     outputContainer.innerHTML = "";
     Quastion06Insertor();
 });
 
+// below code will be displayed in the outputContainer
 function Quastion06Insertor() {
     outputContainer.innerHTML = `
     <div>
@@ -233,13 +225,18 @@ function Quastion06Insertor() {
     `;
 };
 
+
+// After sumbit button is clicked in the Employee form
 function EmployeesubmitButton() {
     Quastion06Insertor();
+    // alert message
     alert("Employee details are updated, We will get back to you soon.");
 }
 
+// Question-07 output
 document.getElementById("Question07").addEventListener("click", function () {
     outputContainer.innerHTML = "";
+    // below code will be displayed in the outputContainer
     outputContainer.innerHTML = `
     <h2>Question-07, Design form shown in the link (http://evc-cit.info/cit040/formguide/card_0.png)</h2>
     <div class="Container">
@@ -335,8 +332,10 @@ document.getElementById("Question07").addEventListener("click", function () {
     `;
 });
 
+// Question-08 output
 document.getElementById("Question08").addEventListener("click", function () {
     outputContainer.innerHTML = "";
+    // below code will be displayed in the outputContainer
     outputContainer.innerHTML = `
     <h2>Question-08, Use the table tag to design given image Click here.</h2>
     <div class="tableContainer">
@@ -414,8 +413,10 @@ document.getElementById("Question08").addEventListener("click", function () {
     </div>`;
 });
 
+// Question-09 output
 document.getElementById("Question09").addEventListener("click", function () {
     outputContainer.innerHTML = "";
+    // below code will be displayed in the outputContainer
     outputContainer.innerHTML = `
      <h2>Question-09, Write HTML input tags snippet to show default values for all Form elements.</h2>
     <br>
@@ -498,8 +499,10 @@ document.getElementById("Question09").addEventListener("click", function () {
     `;
 });
 
+// Question-10 output
 document.getElementById("Question10").addEventListener("click", function () {
     outputContainer.innerHTML = "";
+    // below code will be displayed in the outputContainer
     outputContainer.innerHTML = `
     <div>
         <h2>Question-10, In your, HTML page add the below line and Highlight it without using any CSS.</h2>
@@ -509,8 +512,11 @@ document.getElementById("Question10").addEventListener("click", function () {
     `;
 });
 
+
+// Question-11 output
 document.getElementById("Question11").addEventListener("click", function () {
     outputContainer.innerHTML = "";
+    // below code will be displayed in the outputContainer
     outputContainer.innerHTML = `
     <div>
         <h2>Question-11, Create an HTML page, which should contain all types of input elements.</h2>
