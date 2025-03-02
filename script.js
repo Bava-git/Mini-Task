@@ -30,7 +30,7 @@ document.getElementById("Question01").addEventListener("click", function () {
             </pre>
             </div>
             
-            <h2>Corrected code</h2>
+            <h2>Deployed code</h2>
             <div class="coorectedCode">
                 <div>
                     <p>guvi</p>
@@ -75,7 +75,7 @@ document.getElementById("Question02").addEventListener("click", function () {
             </pre>
             </div>
             
-            <h2>Corrected code</h2>
+            <h2>Deployed code</h2>
             <div class="coorectedCode">
                 <div>
                     <p>guvi</p>
@@ -212,9 +212,11 @@ function Quastion06Insertor() {
             <label for="phonenumber">Phone:</label>
             <input type="tel" class="phonenumber" id="phonenumber" name="phonenumber" autocomplete="mobile" required>
             <br><br>
-            <label for="employeeType">Employee Type:</label>
-            <input type="radio" class="employeeType" id="employeeType" name="employeeType" value="Salaried" required>Salaried
-            <input type="radio" class="employeeType" id="employeeType" name="employeeType" value="Own Business" required>Own Business
+            <label for="SalariedemployeeType">Employee Type:</label>
+            <input type="radio" class="employeeType" id="SalariedemployeeType" name="employeeType" value="Salaried" required>
+            <label for="SalariedemployeeType">Salaried</label>
+            <input type="radio" class="employeeType" id="OwnBusinessemployeeType" name="employeeType" value="Own Business" required>
+            <label for="OwnBusinessemployeeType">Own Business</label>
             <br><br>
             <div class="SubmitButtonContainer">
                 <button class="SubmitButton" onclick="EmployeesubmitButton();">Submit</button>
@@ -250,20 +252,26 @@ document.getElementById("Question07").addEventListener("click", function () {
             <div class="SubContainer">
                 <div>
                     <label for="guardian">Guardian:</label>
-                    <input type="radio" class="SonOf" id="SonOf" name="guardian" value="SonOf" required>S/o
+                    <input type="radio" class="SonOf" id="SonOf" name="guardian" value="SonOf" required>
+                    <label for="SonOf">S/o</label>
                     <input type="radio" class="DaughterOf" id="DaughterOf" name="guardian" value="DaughterOf"
-                        required>D/o
-                    <input type="radio" class="WifeOf" id="WifeOf" name="guardian" value="WifeOf" required>W/o
-                    <input type="radio" class="CareOf" id="CareOf" name="guardian" value="CareOf" required>C/o
+                        required>
+                        <label for="DaughterOf">D/o</label>
+                    <input type="radio" class="WifeOf" id="WifeOf" name="guardian" value="WifeOf" required>
+                    <label for="WifeOf">W/o</label>
+                    <input type="radio" class="CareOf" id="CareOf" name="guardian" value="CareOf" required>
+                    <label for="CareOf">C/o</label>
                 </div>
                 <input type="text" class="guardian" id="guardian" name="guardian" autocomplete="guardian" required>
             </div>
             <br><br>
             <div class="SubContainer">
-                <label for="Gender">Gender:</label>
+                <label for="MaleGender">Gender:</label>
                 <div>
-                    <input type="radio" class="Gender" id="Gender" name="Gender" value="Male" required>Male
-                    <input type="radio" class="Gender" id="Gender" name="Gender" value="Female" required>Female
+                    <input type="radio" class="Gender" id="MaleGender" name="Gender" value="Male" required>
+                    <lable for="MaleGender">Male</lable>
+                    <input type="radio" class="Gender" id="FemaleGender" name="Gender" value="Female" required>
+                    <lable for="FemaleGender">Female</lable>
                 </div>
             </div>
             <br><br>
@@ -274,42 +282,42 @@ document.getElementById("Question07").addEventListener("click", function () {
             <br><br>
             <div class="SubContainer">
                 <label for="roomno">Room no/ Flat no:</label>
-                <input type="text" class="roomno" id="roomno" name="roomno" autocomplete="roomno" required>
+                <input type="text" class="roomno" id="roomno" name="roomno" autocomplete="street-address" required>
             </div>
             <br><br>
             <div class="SubContainer">
                 <label for="streetname">Street Name:</label>
-                <input type="text" class="streetname" id="streetname" name="streetname" autocomplete="streetname"
+                <input type="text" class="streetname" id="streetname" name="streetname" autocomplete="street-address"
                     required>
             </div>
             <br><br>
             <div class="SubContainer">
                 <label for="VTCofAddress">VTC:</label>
                 <input type="text" class="VTCofAddress" id="VTCofAddress" name="VTCofAddress"
-                    autocomplete="VTCofAddress" required>
+                    autocomplete="street-address" required>
             </div>
             <br><br>
             <div class="SubContainer">
                 <label for="POofAddress">PO:</label>
-                <input type="text" class="POofAddress" id="POofAddress" name="POofAddress" autocomplete="POofAddress"
+                <input type="text" class="POofAddress" id="POofAddress" name="POofAddress" autocomplete="street-address"
                     required>
             </div>
             <br><br>
             <div class="SubContainer">
                 <label for="DistrictAddress">District:</label>
                 <input type="text" class="DistrictAddress" id="DistrictAddress" name="DistrictAddress"
-                    autocomplete="DistrictAddress" required>
+                    autocomplete="street-address" required>
             </div>
             <br><br>
             <div class="SubContainer">
                 <label for="StateAddress">State:</label>
                 <input type="text" class="StateAddress" id="StateAddress" name="StateAddress"
-                    autocomplete="StateAddress" required>
+                    autocomplete="street-address" required>
             </div>
             <br><br>
             <div class="SubContainer">
                 <label for="PINAddress">PIN code:</label>
-                <input type="text" class="PINAddress" id="PINAddress" name="PINAddress" autocomplete="PINAddress"
+                <input type="text" class="PINAddress" id="PINAddress" name="PINAddress" autocomplete="street-address"
                     required>
             </div>
             <br><br>
@@ -425,74 +433,78 @@ document.getElementById("Question09").addEventListener("click", function () {
         <form>
             <div class="form-group">
                 <label for="text">Text:</label>
-                <input type="text" value="Text">
+                <input type="text" value="Text" id="text" autocomplete="name">
             </div>
             <br>
             <div class="form-group">
                 <label for="email">Email:</label>
-                <input type="email" value="email@gmail.com">
+                <input type="email" value="email@gmail.com" id="email" autocomplete="email">
             </div>
             <br>
             <div class="form-group">
                 <label for="password">Password:</label>
-                <input type="password" value="Password">
+                <input type="password" value="Password" id="password" autocomplete="current-password">
             </div>
             <br>
             <div class="form-group">
-                <label for="radio">Radio:</label>
+                <label for="TrueRadio">Radio:</label>
                 <div>
-                    <input type="radio" name="radio" value="True" checked>True
-                    <input type="radio" name="radio" value="False">False
+                    <input type="radio" name="radio" id="TrueRadio" value="True" checked>
+                    <label for="TrueRadio">True</label>
+                    <input type="radio" name="radio" id="FalseRadio" value="False">
+                    <label for="FalseRadio">False</label>
                 </div>
             </div>
             <br>
             <div class="form-group">
-                <label for="checkbox">Checkbox:</label>
+                <label for="slot1">Checkbox:</label>
                 <div>
-                    <input type="checkbox" value="slot1" checked>Slot 1
-                    <input type="checkbox" value="slot2">Slot 2
+                    <input type="checkbox" id="slot1" value="slot1" checked>
+                    <label for="slot1">Slot 1</label>
+                    <input type="checkbox" id="slot2" value="slot2">
+                    <label for="slot2">Slot 2</label>
                 </div>
             </div>
             <br>
             <div class="form-group">
                 <label for="date">Date:</label>
-                <input type="date" value="2021-07-22">
+                <input type="date" value="2021-07-22" id="date" autocomplete="bday">
             </div>
             <br>
             <div class="form-group">
                 <label for="time">Time:</label>
-                <input type="time" value="13:45">
+                <input type="time" value="13:45" id="time" autocomplete="bday-time">
             </div>
             <br>
             <div class="form-group">
                 <label for="number">Number:</label>
-                <input type="number" value="10">
+                <input type="number" value="10" id="number" autocomplete="number">
             </div>
             <br>
             <div class="form-group">
                 <label for="url">URL:</label>
-                <input type="url" value="https://www.google.com">
+                <input type="url" value="https://www.google.com" id="url" autocomplete="url">
             </div>
             <br>
             <div class="form-group">
                 <label for="tel">Tel:</label>
-                <input type="tel" value="1234567890">
+                <input type="tel" value="1234567890" id="tel" autocomplete="tel">
             </div>
             <br>
             <div class="form-group">
-                <label for="option">Option:</label>
+                <label for="text">Option:</label>
                 <div>
-                    <select>
-                        <option value="1" selected>Option 1</option>
-                        <option value="2">Option 2</option>
-                        <option value="3">Option 3</option>
+                    <select name="Option">
+                        <option id="Option1" name="Option" value="1" selected>Option 1</option>
+                        <option id="Option2" name="Option" value="2">Option 2</option>
+                        <option id="Option3" name="Option" value="3">Option 3</option>
                     </select>
                 </div>
             </div>
             <br>
             <div class="form-group">
                 <label for="textarea">Textarea:</label>
-                <textarea>Textarea</textarea>
+                <textarea id="textarea">Textarea</textarea>
             </div>
         </form>
     </div>
@@ -523,86 +535,86 @@ document.getElementById("Question11").addEventListener("click", function () {
         <br>
         <div class="Container">
             <h2>All type of input elements</h2>
-                <div class="form-group">
+                <div class="form-group"> 
                     <label for="text">Text:</label>
-                    <input type="text">
+                    <input type="text" id="text" autocomplete="name">
                 </div>
                 <br>
                 <div class="form-group">
                     <label for="email">Email:</label>
-                    <input type="email">
+                    <input type="email" id="email" autocomplete="email">
                 </div>
                 <br>
                 <div class="form-group">
                     <label for="password">Password:</label>
-                    <input type="password">
+                    <input type="password" id="password" autocomplete="current-password">
                 </div>
                 <br>
                 <div class="form-group">
-                    <label for="radio">Radio Button:</label>
+                    <label for="TrueOption">Radio Button:</label>
                     <div>
-                        <input type="radio" name="radio" value="True">True
-                        <input type="radio" name="radio" value="False">False
+                        <input type="radio" id="TrueOption" name="radio" value="True">True
+                        <input type="radio" id="FalseOption" name="radio" value="False">False
                     </div>
                 </div>
                 <br>
                 <div class="form-group">
-                    <label for="checkbox">Checkbox:</label>
+                    <label for="slot1">Checkbox:</label>
                     <div>
-                        <input type="checkbox" value="slot1">Slot 1
-                        <input type="checkbox" value="slot2">Slot 2
+                        <input type="checkbox" id="slot1" value="slot1">Slot 1
+                        <input type="checkbox" id="slot2" value="slot2">Slot 2
                     </div>
                 </div>
                 <br>
                 <div class="form-group">
                     <label for="date">Date:</label>
-                    <input type="date">
+                    <input type="date" id="date" autocomplete="bday">
                 </div>
                 <br>
                 <div class="form-group">
                     <label for="time">Time:</label>
-                    <input type="time">
+                    <input type="time" id="time" autocomplete="bday-time">
                 </div>
                 <br>
                 <div class="form-group">
                     <label for="datetime-local">Datetime-local:</label>
-                    <input type="datetime-local">
+                    <input type="datetime-local" id="datetime-local" autocomplete="bday-time">
                 </div>
                 <br>
                 <div class="form-group">
                     <label for="month">Month:</label>
-                    <input type="month">
+                    <input type="month" id="month" autocomplete="bday-month">
                 </div>
                 <br>
                 <div class="form-group">
                     <label for="week">Week:</label>
-                    <input type="week">
+                    <input type="week" id="week" autocomplete="bday-time">
                 </div>
                 <br>
                 <div class="form-group">
                     <label for="datetime">Date time:</label>
-                    <input type="datetime">
+                    <input type="datetime" id="datetime">
                 </div>
                 <br>
                 <div class="form-group">
                     <label for="number">Number:</label>
-                    <input type="number">
+                    <input type="number" id="number" autocomplete="number">
                 </div>
                 <br>
                 <div class="form-group">
                     <label for="url">URL:</label>
-                    <input type="url">
+                    <input type="url" id="url" autocomplete="url">
                 </div>
                 <br>
                 <div class="form-group">
                     <label for="tel">Tel:</label>
-                    <input type="tel">
+                    <input type="tel" id="tel" autocomplete="tel">
                 </div>
                 <br>
                 <div class="form-group">
                     <label for="option">Option:</label>
                     <div>
-                        <select>
+                        <select id="option" name="option">
                             <option value="0"></option>
                             <option value="1">Option 1</option>
                             <option value="2">Option 2</option>
@@ -613,52 +625,52 @@ document.getElementById("Question11").addEventListener("click", function () {
                 <br>
                 <div class="form-group">
                     <label for="textarea">Textarea:</label>
-                    <textarea></textarea>
+                    <textarea id="textarea"></textarea>
                 </div>
                 <br>
                 <div class="form-group">
                     <label for="file">File:</label>
-                    <input type="file">
+                    <input type="file" id="file">
                 </div>
                 <br>
                 <div class="form-group">
                     <label for="color">Color:</label>
-                    <input type="color">
+                    <input type="color" id="color">
                 </div>
                 <br>
                 <div class="form-group">
                     <label for="range">Range:</label>
-                    <input type="range">
+                    <input type="range" id="range">
                 </div>
                 <br>
                 <div class="form-group">
                     <label for="search">Search:</label>
-                    <input type="search">
+                    <input type="search" id="search">
                 </div>
                 <br>
                 <div class="form-group">
                     <label for="submit">Submit:</label>
-                    <input type="submit">
+                    <input type="submit" id="submit">
                 </div>
                 <br>
                 <div class="form-group">
                     <label for="reset">Reset:</label>
-                    <input type="reset">
+                    <input type="reset" id="reset">
                 </div>
                 <br>
                 <div class="form-group">
                     <label for="button">Button:</label>
-                    <input type="button" value="Button">
+                    <input type="button" value="Button" id="button">
                 </div>
                 <br>
                 <div class="form-group">
                     <label for="image">Image:</label>
-                    <input type="image">
+                    <input type="image" id="image">
                 </div>
                 <br>
                 <div class="form-group">
-                    <label for="hidden">Hidden:</label>
-                    <input type="hidden">
+                    <label for="text">Hidden:</label>
+                    <input type="hidden" id="hidden">
                 </div>
         </div>
     </div>
